@@ -2,7 +2,9 @@
   "name": "webstaging",
   "private": true,
   "dependencies": {
-    "bootstrap-sass": "~3.3.5"
+    "bootstrap-sass": "~3.3.5",
+    "scrollmagic": "^2.0.5",
+    "swiper": "^3.4.1"
   },
   "overrides": {
     "bootstrap-sass": {
