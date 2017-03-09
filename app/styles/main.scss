@@ -1,0 +1,305 @@
+$icon-font-path: '../fonts/';
+// bower:scss
+@import "bower_components/bootstrap-sass/assets/stylesheets/_bootstrap.scss";
+// endbower
+
+// .container {
+//   position: relative;
+// }
+
+.browserupgrade {
+  margin: 0.2em 0;
+  background: #ccc;
+  color: #000;
+  padding: 0.2em 0;
+}
+
+/* Space out content a bit */
+body {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+/* Everything but the jumbotron gets side spacing for mobile first views */
+.header,
+.marketing,
+.footer {
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+/* Custom page header */
+.header {
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.header-fixed {
+  position: fixed;
+  width: 940px;
+  top: 0;
+  z-index: 999;
+  background: rgba(255, 255, 255, 0.8);
+}
+
+/* Make the masthead heading the same height as the navigation */
+.header h3 {
+  margin-top: 0;
+  margin-bottom: 0;
+  line-height: 40px;
+}
+
+/* Custom page footer */
+.footer {
+  padding-top: 19px;
+  color: #777;
+  border-top: 1px solid #e5e5e5;
+}
+
+/* Customize container */
+@media (min-width: 768px) {
+  .container {
+    max-width: 970px;
+  }
+}
+.container-narrow > hr {
+  margin: 30px 0;
+}
+
+/* Main marketing message and sign up button */
+.jumbotron {
+  text-align: center;
+  border-bottom: 1px solid #e5e5e5;
+}
+.jumbotron .btn {
+  padding: 14px 24px;
+  font-size: 21px;
+}
+
+/* Supporting marketing content */
+.marketing {
+  margin: 40px 0;
+}
+.marketing p + h4 {
+  margin-top: 28px;
+}
+
+/* Responsive: Portrait tablets and up */
+@media screen and (min-width: 768px) {
+  /* Remove the padding we set earlier */
+  .header,
+  .marketing,
+  .footer {
+    padding-right: 0;
+    padding-left: 0;
+  }
+  /* Space out the masthead */
+  .header {
+    margin-bottom: 30px;
+  }
+  /* Remove the bottom border on the jumbotron for visual effect */
+  .jumbotron {
+    border-bottom: 0;
+  }
+}
+
+// flex
+.flexWrapp {
+  background: #6435c9;
+  padding: 10px;
+  display: flex;
+  position: relative;
+  // flex-direction: row;
+  // flex-wrap: wrap;
+  flex-flow: row wrap;
+  // justify-content: space-between;
+  height: 300px;
+  // align-items: baseline;
+  align-content: space-around;
+
+  .item {
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.3);
+    background: #fff;
+    color: #000;
+    padding: 30px;
+    display: block;
+    text-align: center;
+
+    span {
+      font-size: 40px;
+    }
+  }
+
+  // .item-1 {
+  //   padding-top: 60px;
+  // }
+
+  // .item-2 {
+  //   padding-top: 100px;
+  // }
+
+
+}
+
+// swiper
+.swiper-container {
+  margin-bottom: 20px;
+  margin-top: 20px;
+  .swiper-wrapper {
+    height: 200px;
+    line-height: 200px;
+    text-align: center;
+    font-size: 70px;
+    color: #fff;
+    // .swiper-slide:nth-child(1) {
+    //   background: #0af;
+    // }
+    // .swiper-slide:nth-child(2) {
+    //   background: orange;
+    // }
+    // .swiper-slide:nth-child(3) {
+    //   background: purple;
+    // }
+    // .swiper-slide:nth-child(4) {
+    //   background: #0af;
+    // }
+    // .swiper-slide:nth-child(5) {
+    //   background: #000;
+    // }
+    // .swiper-slide:nth-child(6) {
+    //   background: #a0f;
+    // }
+    // .swiper-slide:nth-child(7) {
+    //   background: #f0a;
+    // }
+    // .swiper-slide:nth-child(8) {
+    //   background: #ced;
+    // }
+
+}
+}
+
+
+// 按钮悬停动画
+.container-hover {
+  width: 180px;
+  position: relative;
+  margin: auto;
+
+  .btn-hover {
+    text-decoration: none;
+    display: block;
+    height: 40px;
+    line-height: 40px;
+    width: 150px;
+    background-color: #1c293a;
+    text-align: center;
+    position: relative;
+    margin: 15px;
+    color: #f7f7f7;
+  }
+
+  .btn-hover:before,
+  .btn-hover:after
+  {
+    -webkit-transition: .3s ease;
+    transition: .3s ease;
+  }
+
+  .btn-1:before {
+    content: '';
+    width: 150px;
+    height: 40px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    border: 1px solid #1c293a;
+    box-sizing: border-box;
+  }
+
+  .btn-1:hover:before {
+    width: 142px;
+    height: 32px;
+    border: 1px solid #f7f7f7;
+  }
+
+  .btn-2:before {
+    content: '';
+    width: 150px;
+    height: 40px;
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    box-sizing: border-box;
+    border-right: 1px solid #000;
+    border-bottom: 1px solid #000;
+  }
+
+  .btn-2:hover:before {
+     -webkit-transform: translate(4px, 4px);
+            transform: translate(4px, 4px);
+  }
+}
+
+// 回到顶部
+.to-top {
+  position: fixed;
+  right: 100px;
+  width: 100px;
+  bottom: 50px;
+  background: rgba(12, 122, 1, 0.6);
+  color: #fff;
+  display: none;
+  z-index: 999;
+}
+
+.to-top:hover {
+  background: rgba(12, 222, 1, 0.6);
+  color: #fff;
+}
+
+// 无缝滚动
+.dowebok { 
+  background: #0af;
+  margin: 50px auto; 
+  font-size: 15px;
+  a { 
+    margin: 0 15px; 
+    color: #333; 
+    text-decoration: none;
+  }
+  a:hover { 
+    text-decoration: underline;
+  }
+}
+
+// 无缝滚动-图片
+.dowebok-photo { 
+  margin: 50px auto; 
+  font-size: 0;
+  img { 
+    margin-left: 10px; 
+    vertical-align: top;
+  }
+}
+
+#animate1, #flexWrapp, #dowebok, #jumbotron, #tabswitch {
+  transition: transform 0.3s ease-out;
+  transform-origin: 0 0;
+}
+.zap {
+  // transform: scale(2.5, 0);
+  // transform: rotate(180deg);
+  transform-origin: 0 0;
+  transform: rotate(-45deg) translate(0, -200px);
+}
+
+.red {
+  background: red;
+  width: 120px;
+  margin: 20px auto;
+  border-radius: 16px;
+  text-align: center;
+  font-size: 16px;
+}

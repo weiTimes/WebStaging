@@ -1,0 +1,22 @@
+#tabswitch {
+  background: #0ff;
+  position: relative;
+  padding-bottom: 30px;
+  margin-bottom: 30px;
+  input {
+	height: 30px;
+  }
+
+  div {
+  	position: absolute;
+	top: 30px;
+	left: 0;
+	display: none;
+  }
+
+  .active {
+  	background: #faf;
+  }
+}
+
+

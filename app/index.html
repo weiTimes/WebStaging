@@ -1,0 +1,248 @@
+<!doctype html>
+<html lang="">
+  <head>
+    <meta charset="utf-8">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>WebStaging</title>
+
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <!-- Place favicon.ico in the root directory -->
+
+    <!-- build:css styles/vendor.css -->
+    <!-- bower:css -->
+    <!-- endbower -->
+    <!-- endbuild -->
+
+    <!-- build:css styles/main.css -->
+    <!-- <link rel="stylesheet" type="text/css" href="../bower_components/swiper/dist/css/swiper.min.css"> -->
+    <link rel="stylesheet" type="text/css" href="/bower_components/swiper/dist/css/swiper.min.css">
+    <link rel="stylesheet" type="text/css" href="styles/liMarquee.css">
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/index.css">
+    <!-- endbuild -->
+    
+  </head>
+  <body>
+    <!--[if IE]>
+      <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+    
+    <div class="container">
+      <div class="header">
+        <ul class="nav nav-pills pull-right">
+          <li class="active">
+            <a href="htmls/test.html">Home</a>
+          </li>
+          <li>
+            <a href="#">About</a>
+          </li>
+          <li>
+            <a href="#">Contact</a>
+          </li>
+        </ul>
+        <h3 class="text-muted">WebStaging</h3>
+      </div>
+
+      <!-- swiper banner-->
+      <div class="swiper-container swiper-container-banner">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide" style="background: #0aa;">slider1</div>
+          <div class="swiper-slide" style="background: purple;">slider2</div>
+          <div class="swiper-slide" style="background: pink;">slider3</div>
+        </div>
+        <div class="swiper-pagination"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+      </div>
+
+      <!-- swiper loop -->
+      <div class="swiper-container swiper-container-loop">
+          <div class="swiper-wrapper">
+              <div class="swiper-slide" style="background: #0aa;">Slide 1</div>
+              <div class="swiper-slide" style="background: orange;">Slide 2</div>
+              <div class="swiper-slide" style="background: yellow;">Slide 3</div>
+              <div class="swiper-slide" style="background: #000;">Slide 4</div>
+              <div class="swiper-slide" style="background: #fac;">Slide 5</div>
+              <div class="swiper-slide" style="background: #faf;">Slide 6</div>
+              <div class="swiper-slide" style="background: purple;">Slide 7</div>
+              <div class="swiper-slide" style="background: #aac;">Slide 8</div>
+          </div>
+      </div>
+
+
+
+      <!-- 无缝滚动 文字-->
+      <div class="dowebok">
+        <a href="http://www.dowebok.com/187.html">Smoothslides – 可平移的jQuery幻灯片插件</a>
+        <a href="http://www.dowebok.com/77.html">jQuery全屏滚动插件fullPage.js</a>
+        <a href="http://www.dowebok.com/131.html">WOW.js – 让页面滚动更有趣</a>
+        <a href="http://www.dowebok.com/139.html">让IE7 IE8支持CSS3 background-size属性</a>
+        <a href="http://www.dowebok.com/117.html">shCircleLoader – jQuery Loading效果插件</a>
+      </div>
+
+      <!-- 无缝滚动 图片 -->
+      <div class="spacer s2"></div>
+      <div id="trigger3" class="spacer s0"></div>
+      <div class="dowebok-photo card-slide" id="dowebok">
+        <img src="images/1.jpg" alt="最佳前男友">
+        <img src="images/2.jpg" alt="花千骨">
+        <img src="images/3.jpg" alt="克拉恋人">
+        <img src="images/4.jpg" alt="神犬小七">
+        <img src="images/5.jpg" alt="秀才遇到兵">
+        <img src="images/6.jpg" alt="暗黑者2">
+        <img src="images/7.jpg" alt="二胎时代">
+        <img src="images/8.jpg" alt="鸳鸯佩">
+        <img src="images/9.jpg" alt="少年神探狄仁杰">
+        <img src="images/10.jpg" alt="华胥引">
+      </div>
+      <div class="spacer s2"></div>
+
+      <!-- flex布局 -->
+      <div class="spacer s2"></div>
+      <div id="trigger2" class="spacer s0"></div>
+      <div class="flexWrapp card-slide" id="flexWrapp">
+        <div class="item item-1"><span> 1 </span></div>
+        <div class="item item-2"><span> 2 </span></div>
+        <div class="item item-3"><span> 3 </span></div>
+        <div class="item item-4"><span> 4 </span></div>
+        <div class="item item-5"><span> 5 </span></div>
+        <div class="item item-6"><span> 6 </span></div>
+        <div class="item item-7"><span> 7 </span></div>
+        <div class="item item-8"><span> 8 </span></div>
+        <div class="item item-9"><span> 9 </span></div>
+        <div class="item item-10"><span> 10 </span></div>
+        <div class="item item-11"><span> 11 </span></div>
+        <div class="item item-12"><span> 12 </span></div>
+      </div>
+      <div class="spacer s2"></div>
+
+      <!-- 页面滚动1... -->
+      
+      <div id="trigger1" class="spacer s0"></div>
+      <div id="animate1" class="box1 red">
+        <p>Zap.</p>
+        <a href="#" class="viewsource">view source</a>
+      </div>
+
+      <!-- 页面滚动2... -->
+      <main role="main">
+        <section>
+          <div>
+            <h1>Basic Pin</h1>
+          </div>
+        </section>
+
+        <section id="pinned-trigger1">
+          <div id="pinned-element1">
+            <p>This element will be pinned for the half the window height</p>
+          </div> 
+        </section>
+
+        <section id="pinned-trigger2">
+          <div id="pinned-element2">
+            <p>This element will be pinned for a duration of 400px</p>
+          </div>
+        </section>
+
+        <section>
+          <div>
+            <p>Section Four!</p>
+          </div>
+        </section>
+      </main>
+
+      <!-- 鼠标悬停动画 -->
+      <div class="container-hover card-slide">
+        <a href="http://www.jq22.com/code759" class="btn-hover btn-1">悬停按钮动画</a>
+        <a href="http://www.jq22.com/code759" class="btn-hover btn-2">悬停按钮动画</a>
+      </div>  
+
+      <!-- tab选项卡 -->
+      <div id="trigger5"></div>
+      <div id="tabswitch">
+        <input type="button" value="教育" class="tabswitch-input active" />
+        <input type="button" value="财经" class="tabswitch-input" />
+        <input type="button" value="运营" class="tabswitch-input" />
+        <div style="display: block;">教育行业的领先者</div>
+        <div>财经电视，准时播出</div>
+        <div>这是一个运营平台</div>
+      </div>
+
+      <!-- jumbotron -->
+      <!-- <div class="spacer s2"></div> -->
+      <div id="trigger4"></div>
+      <div class="jumbotron" id="jumbotron">
+        <h1>'Allo, 'Allo!</h1>
+        <p class="lead">Always a pleasure scaffolding your apps.</p>
+        <p><a class="btn btn-lg btn-success" href="#">Splendid!</a></p>
+      </div>
+      <!-- <div class="spacer s2"></div> -->
+
+      <div class="row marketing">
+        <div class="col-lg-6">
+          <h4>HTML5 Boilerplate</h4>
+          <p>HTML5 Boilerplate is a professional front-end template for building fast, robust, and adaptable web apps or sites.</p>
+
+          <h4>Sass</h4>
+          <p>Sass is the most mature, stable, and powerful professional grade CSS extension language in the world.</p>
+
+          <h4>Bootstrap</h4>
+          <p>Sleek, intuitive, and powerful mobile first front-end framework for faster and easier web development.</p>
+        </div>
+      </div>
+
+
+
+      <!-- 回到顶部 -->
+      <div class="btn to-top">回到顶部</div>
+
+      <div class="footer">
+        <p>♥ from the Yeoman team</p>
+      </div>
+    </div>
+    
+    <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+    <script>
+      (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+      function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+      e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+      e.src='https://www.google-analytics.com/analytics.js';
+      r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+      ga('create','UA-XXXXX-X');ga('send','pageview');
+    </script>
+
+    <!-- build:js scripts/vendor.js -->
+    <!-- bower:js -->
+    <script src="/bower_components/jquery/dist/jquery.js"></script>
+    <!-- endbower -->
+    <!-- endbuild -->
+    
+    <!-- build:js scripts/plugins.js -->
+    <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/affix.js"></script>
+    <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/alert.js"></script>
+    <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/dropdown.js"></script>
+    <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/tooltip.js"></script>
+    <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/modal.js"></script>
+    <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/transition.js"></script>
+    <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/button.js"></script>
+    <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/popover.js"></script>
+    <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/carousel.js"></script>
+    <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/scrollspy.js"></script>
+    <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/collapse.js"></script>
+    <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/tab.js"></script>
+    <script src="/bower_components/swiper/dist/js/swiper.jquery.js"></script>
+    <script src="/bower_components/scrollmagic/scrollmagic/minified/ScrollMagic.min.js"></script>
+    <script src="/bower_components/scrollmagic/scrollmagic/minified/plugins/debug.addIndicators.min.js"></script>
+    <!-- endbuild -->
+    
+    <!-- build:js scripts/main.js -->
+    <script src="scripts/utils/jquery.liMarquee.js"></script>
+    <script src="scripts/utils/index.js"></script>
+    <script src="scripts/main.js"></script>
+    <!-- endbuild -->
+</script>
+
+
+  </body>
+</html>
